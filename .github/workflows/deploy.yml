@@ -38,6 +38,6 @@ jobs:
             --resource-group myresourcegroup \
             --environment mycontainerappenv \
             --image ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest \
-            --target-port 8000 \
+            --target-port 3000 \
             --ingress 'external' \
             --env-vars 'APP_SETTING=my-setting'
